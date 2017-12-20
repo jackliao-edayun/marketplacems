@@ -14,6 +14,7 @@ public abstract class AbstractFetchOrderCommandHandler<T extends MarketPlaceOrde
 
 	public BizResponse<List<T>> execute(C marketPlaceConfig, R marketPlaceCredential) {
 		
+		marketPlaceCredential.getLastOrderSynched();
 		
 		
 		
