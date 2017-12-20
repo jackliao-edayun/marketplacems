@@ -10,13 +10,11 @@ public class FetchMarketplaceOrderProxyImpl implements FetchMarketplaceOrderProx
 	@Override
 	public List<BizOmniOrder> fetchMarketplaceOrder() {
 
-		// fetch all marketplace
 		// check marketplace fetch order interval
-		// fetch all marketplace's account
 		// check marketplace's account fetch order interval
 		// call fetch order service
 		// convert marketplace order to omni order
-		// save last fetch order date
+		
 		return null;
 	}
 
