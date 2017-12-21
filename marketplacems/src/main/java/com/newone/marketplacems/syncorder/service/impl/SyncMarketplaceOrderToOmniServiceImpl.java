@@ -13,19 +13,20 @@ public class SyncMarketplaceOrderToOmniServiceImpl implements SyncMarketplaceOrd
 	private FetchMarketplaceOrderProxy fetchMarketplaceOrderProxy;
 	private MergeMarketplaceOrderProxy mergeMarketplaceOrderProxy;
 	private OmniOrderService omniOrderService;
-	
+
 	@Override
 	public void syncMarketplaceOrderToOmni() {
-		
+
+		// do task dispatch
 		// fetch all marketplace
 		// fetch all marketplace's account
-		
+
 		List<BizOmniOrder> list = fetchMarketplaceOrderProxy.fetchMarketplaceOrder();
 		
 		mergeMarketplaceOrderProxy.merge(list);
-		
+
 		omniOrderService.save(list);
-		
+
 		// save last fetch order date
 	}
 
